@@ -27,6 +27,10 @@ h1{
   text-align: center;
 }
 
+#timer {
+  margin-left: 8%;
+}
+
 .container {
   align-items: center;
   justify-content: center;
@@ -36,11 +40,10 @@ h1{
 }
 
 .score_table {
-    text-align: center;
-    width: 345px;
-    margin-left: 20%;
-    margin-right: 20%;
-    margin-bottom: 3%;
+  width: 345px;
+  font-size: 18px;
+  margin-top: 1%;
+  margin-bottom: 3%;
 }
 
 .score_table .stars {
@@ -59,7 +62,6 @@ h1{
     float: right;
     cursor: pointer;
 }
-
 
 .deck {
     width: 660px;
