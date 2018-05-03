@@ -63,7 +63,7 @@ h1{
     cursor: pointer;
 }
 
-.deck {
+#deck {
     width: 660px;
     min-height: 680px;
     background: linear-gradient(160deg, #02ccba 0%, #aa7ecd 100%);
