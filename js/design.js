@@ -64,8 +64,12 @@ inerval = setInterval(function(){seconds++;
             hours++;
             minutes = 0;
         }
-        if(seconds == 60 || minutes == 60 || hours>9){
+        if(seconds>9 && minutes>9 && hours>9){
         timecount.innerHTML = hours + ":" + minutes + ":" + seconds;}
+        else if(minutes>9 && seconds>9){
+        timecount.innerHTML = "0"+hours + ":" + minutes + ":" + seconds;}
+        else if(seconds>9){
+          timecount.innerHTML = "0"+hours + ":0" + minutes + ":" + seconds;}
         else{timecount.innerHTML = "0"+hours + ":0" + minutes + ":0" + seconds;}
       },1000);
 };
