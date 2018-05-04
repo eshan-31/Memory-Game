@@ -23,11 +23,18 @@ for(let i=0;i<cards.length; i++){
 cards[i].addEventListener('click',function(){
   p++;
   cards[i].classList.add("open");
-  if(p===2){moves++; if(moves==12){starset[2].classList.add("star-change");} if(moves==18){starset[1].classList.add("star-change");} if(moves==25){starset[0].classList.add("star-change");} movcount.innerHTML = moves; //show the moves on the page
+  if(p===2){moves++;
+            if(moves==12){starset[2].classList.add("star-change");}
+            if(moves==18){starset[1].classList.add("star-change");}
+            if(moves==25){starset[0].classList.add("star-change");}
+            movcount.innerHTML = moves; //show the moves on the page
             let opened = document.getElementsByClassName("open"); //the opened cards
-              if(opened[0].children[0].getAttribute('class') == opened[1].children[0].getAttribute('class')){p=0; opened[0].classList.add("match"); opened[1].classList.add("match"); opened[1].classList.remove("open"); opened[0].classList.remove("open");}//if cards match
-              else{p=0; opened[0].classList.add("wrong-match"); opened[1].classList.add("wrong-match");//if cards dont match
-            window.setTimeout(function(){opened[1].classList.remove("wrong-match","open"); opened[0].classList.remove("wrong-match","open");},800)}
+              if(opened[0].children[0].getAttribute('class') == opened[1].children[0].getAttribute('class')){
+                p=0; opened[0].classList.add("match"); opened[1].classList.add("match"); opened[1].classList.remove("open"); opened[0].classList.remove("open");//if cards match
+              }else{
+                p=0; opened[0].classList.add("wrong-match"); opened[1].classList.add("wrong-match");//if cards dont match
+            window.setTimeout(function(){opened[1].classList.remove("wrong-match","open"); opened[0].classList.remove("wrong-match","open");},800)
+                  }
             }
    var matched = document.getElementsByClassName("match"); if(matched.length==16){finalResult(); }//when all the cards are opened
 });

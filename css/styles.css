@@ -148,9 +148,3 @@ h1{
   visibility: visible ;
   opacity: 100 ;
 }
-
-@media screen and (max-width:780px) {
-  .score_table{
-    font-size: 25px;
-  }
-}
