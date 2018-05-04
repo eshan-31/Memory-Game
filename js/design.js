@@ -7,6 +7,7 @@ let movcount = document.getElementById('moves');
 let timecount = document.getElementById('timer');
 movcount.innerHTML=moves;
 timecount.innerHTML=time;
+var starset = document.getElementsByClassName('fa-star');
 let seconds = 0;
 let minutes = 0;
 let hours = 0;
@@ -15,7 +16,7 @@ for(let i=0;i<cards.length; i++){
 cards[i].addEventListener('click',function(){
   p++;
   cards[i].classList.add("open");
-  if(p===2){moves++; movcount.innerHTML = moves;
+  if(p===2){moves++; if(moves==10){starset[2].classList.add("star-change");} if(moves==15){starset[1].classList.add("star-change");} if(moves==20){starset[0].classList.add("star-change");} movcount.innerHTML = moves;
             let opened = document.getElementsByClassName("open"); //the opened cards
             if(opened[0].children[0].getAttribute('class') == opened[1].children[0].getAttribute('class')){p=0; opened[0].classList.add("match"); opened[1].classList.add("match"); opened[1].classList.remove("open"); opened[0].classList.remove("open");} //if both cards are same
             else{p=0; opened[0].classList.add("wrong-match"); opened[1].classList.add("wrong-match");
