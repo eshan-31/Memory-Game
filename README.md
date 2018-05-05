@@ -4,7 +4,7 @@
 
 <h2>Installation</h2>
 <p>You can either use the download link or t[clone the repository. Then open the 'index.html' file. The game will automatically load in your default browser.</p>
-<p>NOTE: The timers stars as soon as the page is loaded</p>
+<p>NOTE: The timers stars when the first card is clicked</p>
 
 <h2>Made With :-</h2>
 <ul>
@@ -18,6 +18,9 @@
 <li>The user rating (stars) decrease with the increase in number of steps</li>
 <li>The game is completed only when all the cards are opened</li>
 <li>The results are displayed after completing the game</li>
+
+<h2>Attraction</h2>
+<p>Animations are used for aesthetic purpose as well as for easy grasp</p>
 
 <h2>Copyrights</h2>
 <p>The images are downloaded and the codes for shuffling and timer are referenced from the internet</p>
