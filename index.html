@@ -2,58 +2,59 @@
 <html lang="en">
 
 <head>
-   <meta charset="utf-8">
-   <title>Memory Game</title>
-   <link rel="shortcut icon" href="images/udacity.ico">
-   <link rel="stylesheet prefetch" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
-   <link rel="stylesheet prefetch" href="https://fonts.googleapis.com/css?family=Coda">
-   <link rel="stylesheet" href="css/bootstrap.min.css">
-   <link rel="stylesheet" href="css/styles.css">
+    <meta charset="utf-8">
+    <title>Memory Game</title>
+    <link rel="shortcut icon" href="images/udacity.ico">
+    <link rel="stylesheet prefetch" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
+    <link rel="stylesheet prefetch" href="https://fonts.googleapis.com/css?family=Coda">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/styles.css">
 </head>
 
 <body>
-  <div class="container">
-    <header>
-      <h1 class="main_heading">Matching Game</h1>
-    </header>
-    <section class="score_table">
-      <ul class="stars">
-        <li><i class="fa fa-star"></i></li>
-        <li><i class="fa fa-star"></i></li>
-        <li><i class="fa fa-star"></i></li>
-      </ul>
+    <div class="container">
+        <header>
+            <h1 class="main_heading">Matching Game</h1>
+        </header>
+        <section class="score_table">
+            <ul class="stars">
+                <li><i class="fa fa-star"></i></li>
+                <li><i class="fa fa-star"></i></li>
+                <li><i class="fa fa-star"></i></li>
+            </ul>
 
-      <span id="moves"></span> Moves
-      <span id="timer"></span>
-      <div class="restart"><button id="refresh" onClick="window.location.reload()">
+            <span id="moves"></span> Moves
+            <span id="timer"></span>
+            <div class="restart"><button id="refresh" onClick="window.location.reload()">
          <i class="fa fa-repeat"></i></button>
-      </div>
-    </section>
-    <section class="deck-container">
-      <ul id="deck">
-      </ul>
-    </section>
-    <div class="modal fade" id="myModal" role="dialog">
-      <div class="modal-dialog">
-        <div class="modal-content">
-          <div class="modal-header">
-            <button type="button" class="close" onclick="closeModal()">X</button>
-              <h4 class="modal-title">CONGRATULATIONS Winner !!!!</h4>
-          </div>
-        <div class="modal-body">
-          <p class="title">Statistics</p>
-          <p class="stat">Number of Moves :<span class="moves-input"></span></p>
-          <p class="stat">Player Level :<span class="star-input"></span></p>
-          <p class="stat">Time taken :<span class="time-input"></span></p>
+            </div>
+        </section>
+        <section class="deck-container">
+            <ul id="deck">
+            </ul>
+        </section>
+        <div class="modal fade" id="myModal" role="dialog">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" onclick="closeModal()">X</button>
+                        <h4 class="modal-title">CONGRATULATIONS Winner !!!!</h4>
+                    </div>
+                    <div class="modal-body">
+                        <p class="title">Statistics</p>
+                        <p class="stat">Number of Moves :<span class="moves-input"></span></p>
+                        <p class="stat">Player Level :<span class="star-input"></span></p>
+                        <p class="stat">Time taken :<span class="time-input"></span></p>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-default" onClick="window.location.reload()">Wanna Play Again ?</button>
+                    </div>
+                </div>
+            </div>
         </div>
-        <div class="modal-footer">
-          <button type="button" class="btn btn-default" onClick="window.location.reload()">Wanna Play Again ?</button>
-        </div>
-       </div>
-      </div>
     </div>
-  </div>
 
-<script src="js/design.js"></script>
+    <script src="js/design.js"></script>
 </body>
+
 </html>
